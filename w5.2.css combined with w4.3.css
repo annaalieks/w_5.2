@@ -1,0 +1,619 @@
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Regular.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Regular.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Regular.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-display: fallback;  
+}
+
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Bold.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Bold.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Bold.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: fallback;  
+}
+
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Medium.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Medium.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Medium.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100px;
+    font-display: fallback; 
+}
+
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Light.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Light.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Light.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    font-display: fallback; 
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Basis Grotesque Pro", system-ui;
+  font-weight: 400;
+  margin: 0 auto;
+  min-width: 280px;
+}
+
+.desctop {
+    display: none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.heading--peple {
+    padding: 50px;
+    }
+
+.blue-subtitle {
+    color: #0536FC;
+    opacity: 0.9;
+}
+
+h2 {
+    font-size: 28px;
+    line-height: 32px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.link {
+    padding-top: 30px;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+}
+
+.link:hover {
+    background-color: #0536FC;
+}
+
+.link:hover .figure--modified-arrow {
+    background-color: #0536FC;
+}
+
+.link:hover .white-font {
+    color: #FFFFFF;
+}
+
+h3 {
+    color: #000000;
+    margin: 0;
+    padding-top: 30px;
+}
+
+.numbering {
+    opacity: 0.7;
+    font-weight: 300;
+    display: block;
+    color: #000000;
+}
+
+p {
+    color: #000000;
+    opacity: 0.6;
+    margin: 0;
+}
+
+figure {
+    width: 60px;
+    height: 60px;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    float: right;
+    margin-left: 25px;
+}
+
+.banner__image {
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: block;
+    width: auto;
+    height: 300px;
+
+}
+
+.banner__image--school {
+    background-image: url("img/taylor-wilcox-NTur2_QKpg0-unsplash.jpg");
+    background-image: -webkit-image-set(
+        url("img/taylor-wilcox-NTur2_QKpg0-unsplash.jpg") 1x,
+        url("img/taylor-wilcox-NTur2_QKpg0-unsplash_x2.jpg") 2x
+    );
+}
+
+.banner__image--members {
+    background-image: url("img/brooke-cagle--uHVRvDr7pg-unsplash.jpg");
+    background-image: -webkit-image-set(
+        url("img/brooke-cagle--uHVRvDr7pg-unsplash.jpg") 1x,
+        url("img/brooke-cagle--uHVRvDr7pg-unsplash_x2.jpg") 2x
+    );
+}
+
+.banner__image--partners {
+    background-image: url("img/image28.jpg");
+    background-image: -webkit-image-set(
+        url("img/image28.jpg") 1x,
+        url("img/image28_x2.jpg") 2x
+    );
+}
+
+section.problem {
+    padding-left: 30px;
+}
+
+.heading--problem p{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.statistics {
+    display: inline-block;
+    margin-right: 5%;
+    min-width: 225px;
+}
+
+.amount {
+    font-size: 100px;
+    font-weight: 500px;
+}
+
+.amount::before {
+    width: 70px;
+    height: 70px;
+    padding-right: 35px;
+}
+
+.statistics--population .amount::before {
+    content: url(img/Hat-top.svg);
+}
+
+.statistics--education .amount::before {
+    content: url(img/Hat-side.svg);
+}
+
+.statistics--problem .amount::before {
+    content: url(img/Briefcase.svg);
+}
+
+.statistics__paragraph {
+    max-width: 200px;
+}
+
+@media all and (min-width: 1200px) {
+    .desctop {
+        display: block;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+    }
+
+    .people.grid {
+        grid-template-rows: 445px 445px;
+        grid-template-areas:    
+            "heading-people heading-people banner-school link--school"
+            "link-members banner-members link-partners banner-partners"
+    }
+
+    .problem.grid {
+        grid-template-rows: 520px 400px;
+        grid-template-areas:    
+            "motto motto heading-problem heading-problem"
+            ". statistics-population statistics-education statistics-problem";
+    }
+
+    .heading--peple {
+        grid-area: heading-people;
+        padding: 150px 0 0 210px;
+        }
+    
+
+    .banner__image--school {
+        grid-area: banner-school; 
+    }
+
+    .banner__link--school {
+        grid-area: link--school;
+    }
+
+    .banner__link--members {
+        grid-area: link-members;
+    }
+
+    .banner__image--members {
+        grid-area: banner-members; 
+    }
+
+    .banner__link--partners {
+        grid-area: link-partners;
+    }
+
+    .banner__image--partners {
+        grid-area: banner-partners; 
+    }
+
+    section.problem {
+        padding-left: 0;
+    }
+
+    .motto {
+        grid-area: motto; 
+        padding-top: 204px;
+        padding-left: 210px;
+        margin: 0;
+        text-align: left;
+    }
+
+    .motto {
+        opacity: 0.35;
+        padding: 200px 0;
+        text-align: center;
+        min-width: 180px;
+        margin: auto;
+    }
+    
+    .motto span {
+        text-transform: none;
+        font-weight: 400;
+    }
+
+    .heading--problem {
+        grid-area: heading-problem; 
+        padding-top: 150px;
+        padding-left: 50px;
+    }
+
+    .statistics--population {
+        grid-area: statistics-population; 
+    }
+
+    .statistics--education {
+        grid-area: statistics-education; 
+    }
+
+    .statistics--problem {
+        grid-area: statistics-problem; 
+    }
+
+    .statistics {
+        align-self: center;
+        padding-left: 50px;
+        margin: 0;
+    }
+
+    .banner__image {
+        height: auto;
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 70px;
+        max-width: 488px;
+    }
+
+    .heading--problem p {
+        max-width: 365px;
+        padding: 0;
+    }
+
+    .figure--modified-arrow {
+        display: block;
+        background-color: #FFFFFF;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 50px;
+        transform: rotate(45deg);
+    }
+
+    .arrow-left {
+        left: -15px;
+    }
+
+    .arrow-right {
+        right: -15px;
+        z-index: 1;
+    }
+
+    .link {
+        padding-top: 50px;
+        padding-left: 50px;
+        margin: 0;
+    }
+
+    figure {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media all and (max-width: 1200px) and (min-width: 768px) {
+    .desctop {
+        display: none;
+    }
+
+    .people.grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: auto 445px 445px 445px;
+        grid-template-areas:    
+            "heading-people heading-people"
+            "banner-school link--school"
+            "link-members banner-members"
+            "banner-partners link-partners";
+    }
+
+    .laptop-grid {
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: auto auto;
+        grid-template-areas:    
+            "heading-problem heading-problem heading-problem"
+            "statistics-population statistics-education statistics-problem";
+    }
+
+    .heading--peple {
+        grid-area: heading-people;
+        padding: 100px 0;
+        margin: auto;
+    }
+    
+    .banner__image--school {
+        grid-area: banner-school; 
+    }
+
+    .banner__link--school {
+        grid-area: link--school;
+    }
+
+    .banner__link--members {
+        grid-area: link-members;
+    }
+
+    .banner__image--members {
+        grid-area: banner-members; 
+    }
+
+    .banner__link--partners {
+        grid-area: link-partners;
+    }
+
+    .banner__image--partners {
+        grid-area: banner-partners; 
+    }
+
+    section.problem {
+        padding-left: 0;
+    }
+
+    .heading--problem {
+        grid-area: heading-problem; 
+        padding: 100px 0;
+        margin: auto;
+        max-width: 715px;
+    }
+
+    .heading--problem p {
+        padding: 0;
+    }
+
+    .statistics {
+        min-width: 230px;
+        margin: auto;
+    }
+
+    .statistics--population {
+        grid-area: statistics-population; 
+    }
+
+    .statistics--education {
+        grid-area: statistics-education; 
+    }
+
+    .statistics--problem {
+        grid-area: statistics-problem; 
+    }
+
+    h2 {
+        font-size: 38px;
+        line-height: 42px;
+        margin-bottom: 70px;
+    }
+
+    .banner__image {
+        height: auto;
+    }
+
+    .link {
+        margin: 0;
+    }
+}
+
+/* 
+====================================
+HOMEWORK WEAK 5.2
+====================================
+*/
+
+
+/* 
+====================================
+COMMON STYLES
+====================================
+*/
+
+@media all and (min-width: 1200px) {
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+}
+}
+
+.heading {}
+
+.heading__subtitle--blue {}
+
+.heading__title {}
+
+.heading__subtitle--transperent {}
+
+.heading__desc {} /* тут я б прибрала клас, раз виявилось, шо іноді так можна і просто використала б стилі для "p"*/
+
+.uppercase {}
+
+.link {}
+
+.link__heading {}
+
+.link__heading .heading__img {}
+
+.link--white-font {}
+
+.link__description {}
+
+.link__img {}
+
+/* 
+====================================
+SECTION HELP COMPONENT STYLES
+====================================
+*/
+
+@media all and (min-width: 1200px) {
+.grid--help {
+    grid-template-rows: auto auto;
+    grid-template-areas:    
+        "help__heading help__heading . ."
+        ". . help__qanda help__qanda";
+}
+
+.help__heading {
+    grid-area: help__heading;
+}
+
+.help__qanda {
+    grid-area: help__qanda;
+}
+}
+
+.qanda--collapsible {}
+
+.collapsible__q {}
+
+.collapsible__a {}
+
+/* 
+====================================
+SECTION PARTNERS COMPONENT STYLES
+====================================
+*/
+
+@media all and (min-width: 1200px) {
+.grid--patners {
+    grid-template-rows: auto auto;
+    grid-template-areas:    
+        "partners__heading partners__heading . ."
+        "link--nix link--nis link--dhl link--macpaw";
+}
+
+.partners__heading {
+    grid-area: partners__heading;
+}
+
+.partners__link--nix {
+    grid-area: link--nix;
+}
+
+.partners__link--nis {
+    grid-area: link--nis;
+}
+
+.partners__link--dhl {
+    grid-area: link--dhl;
+}
+
+.partners__link--macpaw {
+    grid-area: link--macpaw;
+}
+}
+
+/* 
+====================================
+SECTION CONTACT COMPONENT STYLES
+====================================
+*/
+
+@media all and (min-width: 1200px) {
+.grid--contact-heading {
+    grid-template-rows: auto;
+    grid-template-areas:    
+        "contact__heading contact__heading . .";
+}
+
+.contact__heading {
+    grid-area: contact__heading;
+}
+
+.grid--contact-form {
+    grid-template-rows: auto;
+    grid-template-areas:    
+        "form--left form--left form--right form--right";
+}
+
+.contact__form--left {
+    grid-area: form--left;
+}
+
+.contact__form--right {
+    grid-area: form--right;
+}
+}
+
+.form__fields {}
+
+.form__label {}
+
+.form__input {}
+
+.form__submit-btn {}

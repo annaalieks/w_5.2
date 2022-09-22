@@ -1,0 +1,152 @@
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Regular.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Regular.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Regular.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    font-display: fallback;  
+}
+
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Bold.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Bold.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Bold.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-display: fallback;  
+}
+
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Medium.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Medium.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Medium.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-size: 100px;
+    line-height: 100px;
+    font-display: fallback; 
+}
+
+@font-face {
+    font-family: "Basis Grotesque Pro";
+    src:    url("fonts/BasisGrotesquePro-Light.woff2") format("woff2"),
+            url("fonts/BasisGrotesquePro-Light.woff") format("woff"),
+            url("fonts/BasisGrotesquePro-Light.eot") format("embedded opentype"),
+            url("fonts/BasisGrotesquePro-Light.ttf") format("truetype");
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    font-display: fallback; 
+}
+
+/* 
+====================================
+COMMON STYLES
+====================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Basis Grotesque Pro", system-ui;
+  font-weight: 400;
+  margin: 0 auto;
+  min-width: 280px;
+}
+
+.grid {}
+
+.heading {}
+
+.heading__subtitle--blue {}
+
+.heading__title {}
+
+.heading__subtitle--transperent {}
+
+.heading__desc {} /* тут я б прибрала клас, раз виявилось, шо іноді так можна і просто використала б стилі для "p"*/
+
+.uppercase {}
+
+.link {}
+
+.link__heading {}
+
+.link__heading .heading__img {}
+
+.link--white-font {}
+
+.link__description {}
+
+.link__img {}
+    
+/* 
+====================================
+SECTION HELP COMPONENT STYLES
+====================================
+*/
+    
+.grid--help {}
+    
+.help__heading {}
+    
+.help__qanda {}
+    
+.qanda--collapsible {}
+    
+.collapsible__q {}
+    
+.collapsible__a {}
+    
+/* 
+====================================
+SECTION PARTNERS COMPONENT STYLES
+====================================
+*/
+    
+ .grid--patners {}
+    
+ .partners__heading {}
+    
+ .partners__link--nix {}
+ 
+ .partners__link--nis {}
+ 
+ .partners__link--dhl {}
+ 
+ .partners__link--macpaw {}
+
+/* 
+====================================
+SECTION CONTACT COMPONENT STYLES
+====================================
+*/
+    
+.grid--contact-heading {}
+    
+.contact__heading {}
+    
+.grid--contact-form {}
+    
+.contact__form--left {}
+    
+.contact__form--right {}
+    
+.form__fields {}
+    
+.form__label {}
+    
+.form__input {}
+    
+.form__submit-btn {}
